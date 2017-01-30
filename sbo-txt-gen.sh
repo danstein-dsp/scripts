@@ -4,7 +4,7 @@
    source $i/${NAME}.info
    SHORTDES=$(grep -m 1 $NAME $i/slack-desc | cut -d " " -f2-)
    echo SLACKBUILD NAME: $NAME
-   echo SLACKBUILD LOCATION: $i
+   echo SLACKBUILD LOCATION: "./"$i
    echo SLACKBUILD FILES: $FILES
    echo SLACKBUILD VERSION: $VERSION
    echo SLACKBUILD DOWNLOAD: $DOWNLOAD
@@ -14,7 +14,7 @@
    echo SLACKBUILD REQUIRES: $REQUIRES
    echo SLACKBUILD SHORT DESCRIPTION: $SHORTDES
    echo
-   done
+ done
 
 
 
