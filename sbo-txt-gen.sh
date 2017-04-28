@@ -1,4 +1,4 @@
- in */*; do
+for i in */*; do
    NAME=$(echo $i | cut -d "/" -f2)
    FILES=$(ls $i)
    source $i/${NAME}.info
@@ -15,6 +15,3 @@
    echo SLACKBUILD SHORT DESCRIPTION: $SHORTDES
    echo
  done
-
-
-
